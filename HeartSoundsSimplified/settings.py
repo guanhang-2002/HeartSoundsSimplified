@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'Index',
     'Exhibition',
     'django.contrib.sites',
+    'captcha',
+    'tyadmin_api_cli',
+    'tyadmin_api',
 ]
 
 MIDDLEWARE = [
@@ -211,3 +214,7 @@ APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
 APSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds
 # site 设置
 SITE_ID = 1
+# 需要Tyadmin生成的列表
+TY_ADMIN_CONFIG = {
+    'GEN_APPS': ['User','Exhibition']
+}
