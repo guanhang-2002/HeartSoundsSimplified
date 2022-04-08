@@ -1,0 +1,1 @@
+web: gunicorn HeartSoundsSimplified.wsgi --log-file -
