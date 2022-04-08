@@ -29,7 +29,6 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'User',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +39,7 @@ INSTALLED_APPS = [
     'Exhibition',
     'django.contrib.sites',
     'captcha',
+    'User',
     'tyadmin_api_cli',
     'tyadmin_api',
 ]
