@@ -30,7 +30,8 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'User',
-    'django.contrib.admin',
+    # 使用自定义的用户类
+    # 'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
