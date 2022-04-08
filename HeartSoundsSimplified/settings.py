@@ -29,9 +29,8 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'User',
-    # 使用自定义的用户类
-    # 'django.contrib.admin',
+
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -43,6 +42,7 @@ INSTALLED_APPS = [
     'captcha',
     'tyadmin_api_cli',
     'tyadmin_api',
+    'User',
 ]
 
 MIDDLEWARE = [
