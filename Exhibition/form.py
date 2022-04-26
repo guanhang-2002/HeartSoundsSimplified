@@ -1,6 +1,6 @@
 from django import forms
 from django.core.exceptions import ValidationError
-from django.forms import ModelForm
+from django.forms import ModelForm, Textarea
 
 from Exhibition.models import Introduce
 from HeartSoundsSimplified.utility import re_match_for_sample_frequency, re_match_for_sample_duration

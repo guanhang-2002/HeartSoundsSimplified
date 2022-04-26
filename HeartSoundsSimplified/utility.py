@@ -77,10 +77,17 @@ def get_code(email):
 def re_match_for_sample_frequency(sample):
     """匹配输入的频率数据"""
     pattern=re.compile(r'\d+Hz',re.I)
-    return re.match(pattern,sample).group()
-
+    result=re.match(pattern,sample).group()
+    if result is not None:
+        return result
+    else:
+        return None
 def re_match_for_sample_duration(sample):
     """匹配输入的时间间隔数据"""
     pattern = re.compile(r'\d+s', re.I)
-    return re.match(pattern, sample).string
+    result= re.match(pattern, sample).string
+    if result is not None:
+        return result
+    else:
+        return None
 

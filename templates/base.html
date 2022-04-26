@@ -19,16 +19,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'User:login' %}">Login</a>
+                    <a class="nav-link" href="{% url 'User:login' %}">登录</a>
                 </li>
                 <li class="nav-item">
                     {% if user.username %}
-                        <a href="{% url 'User:logout' %}" class="nav-link">logout</a>
+                        <a href="{% url 'User:logout' %}" class="nav-link">登出</a>
                     {% endif %}
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+                        菜单
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -37,18 +37,17 @@
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                <span class="navbar-brand">
-                    {% if user.username %}
-                    {{ user }}
-                    {% endif %}
-                </span>
-                </li>
+
             </ul>
+            <span class="navbar-brand text-center">
+                        {% if user.username %}
+                        Hello,{{ user }}
+                        {% endif %}
+            </span>
             <form class="d-flex" action="/" method="post">
                 {% csrf_token %}
                 <input class="form-control me-2" type="search" placeholder="暂时没有做该功能" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-success" type="submit">搜索</button>
             </form>
         </div>
     </div>
