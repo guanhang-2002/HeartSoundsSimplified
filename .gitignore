@@ -1,0 +1,5 @@
+*.dat
+Exhibition/migrations/0002_initial.py
+*.pyc
+User/migrations/0001_initial.py
+Exhibition/__pycache__/form.cpython-38.pyc
