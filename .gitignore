@@ -3,3 +3,13 @@ Exhibition/migrations/0002_initial.py
 *.pyc
 User/migrations/0001_initial.py
 Exhibition/__pycache__/form.cpython-38.pyc
+Exhibition/__pycache__/form.cpython-38.pyc
+Exhibition/migrations/0001_initial.py
+Exhibition/migrations/__pycache__/0002_initial.cpython-38.pyc
+HeartSoundsSimplified/__pycache__/settings.cpython-38.pyc
+HeartSoundsSimplified/__pycache__/utility.cpython-38.pyc
+static/images/heartsounds_images/compress-1km6lv.jpg
+static/images/heartsounds_images/compress-3z8526.jpg
+static/images/heartsounds_images/compress-3z8zr9.jpg
+User/migrations/__pycache__/0001_initial.cpython-38.pyc
+Exhibition/migrations/__pycache__/0002_initial.cpython-38.pyc
