@@ -9,8 +9,8 @@ from HeartSoundsSimplified.utility import re_match_for_sample_frequency, re_matc
 class UploadeForm(ModelForm):
     file = forms.FileField(
         widget=forms.ClearableFileInput(attrs={'multiple': True}),  # 支持多文件上传
-        label='心音数据',
-        help_text='最大100M',
+        label='心音数据.dat格式',
+        help_text='最大75M',
     )
 
     class Meta:

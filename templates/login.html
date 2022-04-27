@@ -6,43 +6,23 @@
 {% block content %}
 <br>
 <br>
-<div class="col-md-7 col-lg-8">
-    <form action="" method="post">
-        {% csrf_token %}
-        <!-- 内容主界面 -->
-        {{ form.subject.errors }}
-        <div>
-            {{ form }}
+
+    <div class="container text-center">
+        <div class="form-row">
+           <form action="" method="post" class="">
+            {% csrf_token %}
+            <!-- 内容主界面 -->
+            <div class="col-sm-4 col-md-4 container-fluid">
+                {{ form.errors }}
+                {{ form }}
+                <div class="btn-group" aria-label="Basic outlined example" role="group">
+                    <input type="submit" class="btn btn-success" value="登录">
+                    <a href="{% url 'User:register' %}" class="btn btn-success" role="button">注册?</a>
+                    <a href="{% url 'User:emailusername' %}" class="btn btn-success" role="button">忘记密码?</a>
+                </div>
+            </div>
+            {#            <input type="submit" value="登录" class="btn btn-outline-success">#}
+        </form>
         </div>
-            <input type="submit" value="登录" class="btn btn-outline-success">
-    </form>
-    <a href="{% url 'User:register' %}"><input type="submit" value="没有账号,创建一个?" class="btn btn-outline-success" ></a>
-    <a href="{% url 'User:emailusername' %}"><input type="submit" value="忘记密码?" class="btn btn-outline-success"></a>
-</div>
-
-<div class="dropdown-menu">
-  <form class="px-4 py-3">
-    <div class="mb-3">
-      <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
     </div>
-    <div class="mb-3">
-      <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-    </div>
-    <div class="mb-3">
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="dropdownCheck">
-        <label class="form-check-label" for="dropdownCheck">
-          Remember me
-        </label>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
-  </form>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" href="#">New around here? Sign up</a>
-  <a class="dropdown-item" href="#">Forgot password?</a>
-
-</div>
 {% endblock %}
